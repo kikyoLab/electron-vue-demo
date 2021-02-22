@@ -1,5 +1,7 @@
 {
     "name": "electron-vue-demo",
+    "author": "Kikyo",
+    "description": "a demo of the electron and vue",
     "version": "0.1.0",
     "private": true,
     "scripts": {

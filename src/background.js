@@ -27,7 +27,9 @@ function createWindow () {
     webPreferences: {
       webSecurity: false,
       nodeIntegration: true
-    }
+    },
+    // eslint-disable-next-line no-undef
+    icon: `${__static}/app.ico`
   })
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
@@ -49,7 +51,7 @@ function createWindow () {
 
 // 设置菜单栏
 function createMenu () {
-  // darwin表示macOS，针对macOS的设置
+  // darwin表示 macOS，针对 macOS的设置
   if (process.platform === 'darwin') {
     const template = [
       {
@@ -65,7 +67,8 @@ function createMenu () {
     const menu = Menu.buildFromTemplate(template)
     Menu.setApplicationMenu(menu)
   } else {
-    // windows及linux系统
+    // windows及 linux系统
+    // 禁用默认菜单
     Menu.setApplicationMenu(null)
   }
 }
