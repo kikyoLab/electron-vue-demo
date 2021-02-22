@@ -1,24 +1,16 @@
-# electron-vue-demo
+# electron-app
 
 ## Project setup
 ```
-npm install
+yarn
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn start
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn make
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
